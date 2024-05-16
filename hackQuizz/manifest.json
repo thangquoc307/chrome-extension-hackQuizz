@@ -1,0 +1,24 @@
+{
+  "name": "User Authentication",
+  "description": "Authentication Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/r-logo-gray.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/script.js"],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "images/r-logo-gray.png",
+    "32": "images/r-logo-gray.png",
+    "48": "images/r-logo-gray.png",
+    "128": "images/r-logo-gray.png"
+  }
+}
