@@ -11,7 +11,8 @@
     {
       "js": ["scripts/script.js"],
       "matches": [
-        "https://quizlet.com/*"
+        "https://quizlet.com/*",
+        "https://coderbyte.com/*"
         ]
     }
   ],
