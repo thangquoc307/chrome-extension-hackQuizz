@@ -11,8 +11,8 @@
     {
       "js": ["scripts/script.js"],
       "matches": [
-        "<all_urls>"
-      ]
+        "https://quizlet.com/*"
+        ]
     }
   ],
   "icons": {
