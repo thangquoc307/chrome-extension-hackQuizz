@@ -1132,97 +1132,735 @@ return (long) by / d*3;
 4. System.out.println("== succeeded");
 5. if (s1.equals(s2))
 6. System.out.println(".equals() succeeded");`,[3],[`A. Line 4 executes, and line 6 does not.`,`B. Lines 4 and 6 both execute.`,`C. Neither line 4 nor line 6 executes.`,`D. Line 6 executes, and line 4 does not.`]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
+    new Question(`Given the following declarations:
+String s1 = new String("Hello");
+String s2 = new String("there");
+String s3 = new String();
+Which of the following are legal operations?`,[1],[`A. s3 = s1 - s2;`,`B. s3 = s1 + s2;`,`C. s3 = s1 & s2`,`D. s3 = s1 && s2`]),
+    new Question(`Which two are valid declarations of a String? (Choose two.)`,[0,3],[`A. String s1 = null;`,`B. String s2 = 'null';`,`C. String s3 = (String) 'abc';`,`D. String s5 = "Using Strings rule";`]),
+    new Question(`If you run the code below, what gets printed out?
+String s = new String("Bicycle");
+int iBegin = 1;
+char iEnd = 3;
+System.out.println(s.substring(iBegin, iEnd));`,[2],[`A. Bic`,`B. error: no method matching substring(int, char)`,`C. ic`,`D. icy`]),
+    new Question(`Given the following code,
 
+public class StringRef {
+2. public static void main(String [] args) {
+3. String s1 = "abc";
+4. String s2 = "def";
+5. String s3 = s2;
+6. s2 = "ghi";
+7. System.out.println(s1 + s2 + s3);
+8. }
+9. }
+What is the result?`,[2],[`A. abcdefghi`,`B. abcdefdef`,`C. abcghidef`,`D. abcghighi`]),
+    new Question(`Given the following code,
+1. public class Theory {
+2. public static void main(String[] args) {
+3. String s1 = "abc";
+4. String s2 = s1;
+5. s1 += "d";
+6. System.out.println(s1 + " " + s2 + " " + (s1 == s2));
+7.
+8. StringBuffer sb1 = new StringBuffer("abc");
+9. StringBuffer sb2 = sb1;
+10. sb1.append("d");
+11. System.out.println(sb1 + " " + sb2 + " " + (sb1 == sb2));
+12. }
+13. }
+Which are true? (Choose all that apply.)`,[2,3],[`A. The first line of output is abc abc true`,`B. The first line of output is abc abc false`,`C. The first line of output is abcd abc false`,`D. The second line of output is abcd abcd true`]),
+    new Question(`Given the following code,
+4. String d = "bookkeeper";
+5. d.substring(1,7);
+6. d = "w" + d;
+7. d.append("woo");
+8. System.out.println(d);
+What is the result?`,[3],[`A. wookkeewoo`,`B. wbookkeeper`,`C. wbookkeewoo`,`D. Compilation fails.`]),
+    new Question(`Consider the following program:
+class SBAppend {
+public static void main(String []args) {
+Object nullObj = null;
+StringBuffer strBuffer = new StringBuffer(10);
+strBuffer.append("hello ");
+strBuffer.append("world ");
+strBuffer.append(nullObj);
+strBuffer.insert(11, '!');
+System.out.println(strBuffer);
+}
+}
+Which one of the following options correctly describes the behavior of this program?`,[2],[`A. This program throws a NullPointerException.`,`B. This program prints the following: hello world!`,`C. This program prints the following: hello world! Null`,`D. This program throws an InvalidArgumentException.`]),
+    new Question(`What will be the result of attempting to compile and run the following program?
+public class TestClass{
+public static void main(String args[ ] ){
+StringBuilder sb = new StringBuilder("12345678");
+sb.setLength(5);
+sb.setLength(10);
+System.out.println(sb.length());
+}
+}`,[0],[`A. It will print 10.`,`B. It will print 5.`,`C. Compilation error.`,`D. None of the above.`,`E. It will print 8.`]),
+    new Question(`What will be the result of attempting to compile and run the following program?
+public class TestClass {
+public static void main(String args[]) {
+String s = "hello";
+StringBuilder sb = new StringBuilder("hello");
+sb.reverse();
+s.reverse();
+if(s == sb.toString()) System.out.println("Equal");
+else System.out.println("Not Equal");
+}
+}`,[0],[`A. Compilation error.`,`B. It will print 'Equal'.`,`C. It will print 'Not Equal'.`,`D. Runtime error.`,`E. None of the above.`]),
+    new Question(`Can null value be added to a List ?`,[0],[`A. Yes`,`B. No`]),
+    new Question(`What is the result ?
 
+import java.util.*;
+public class Primes {
+public static void main(String[] args) {
+List p = new ArrayList();
+p.add(7);
+p.add(2);
+p.add(5);
+p.add(2);
+p.sort();
+System.out.println(p);
+}
+}`,[2],[`A. [2, 2, 5, 7]`,`B. Compilation fails at line 4`,`C. Compilation fails at line 9`,`D. Compilation fails at line 4, 9`]),
+    new Question(`Which statements coule be inserted at // INSERT DECLARATION HERE to allow this code to compile and run ?
+
+public static void main(String[] args) {
+for (int i = 0; i <= 10; i++) {
+List<Integer> row = new ArrayList<Integer>();
+for (int j = 0; j <= 10; j++)
+row.add(i * j);
+table.add(row);
+}
+for(List<Integer> row : table)
+System.out.println(row);
+}
+}`,[1],[`A. List<List<Integer>> table = new List<List<Integer>>();`,`B. List<List<Integer>> table = new ArrayList<List<Integer>>();`,`C. List<List<Integer>> table = new ArrayList<ArrayList<Integer>>();`,`D. None of the above`]),
+    new Question(`Which, inserted independently at line 9, will compile ?
+
+import java.util.*;
+class Business { }
+class Hotel extends Business { }
+class Inn extends Hotel { }
+public class Travel {
+ArrayList<Hotel> go() {
+// insert code here
+}
+}`,[1],[`A. return new ArrayList<lnn>();`,`B. return new ArrayList<Hotel>();`,`C. return new ArrayList<Object>();`,`D. return new ArrayList<Business>();`]),
+    new Question(`Given the following code, what is the result ?
+
+import java.util.*;
+class ArrayList {
+public static void main(String[] args) {
+ArrayList obj = new ArrayList();
+obj.add("A");
+obj.add("B");
+obj.add("C");
+obj.add(1, "D");
+System.out.println(obj);
+}
+}`,[1],[`A. [A, B, C, D]`,`B. [A, D, B, C]`,`C. [A, D, C]`,`D. [A, B, C]`]),
+    new Question(`Given the complete contents of TestClass.java file. Which import statement should be added to make it compile ?
+
+package x;
+public class TestClass {
+ArrayList<String> al;
+public void init() {
+al = new ArrayList<>();
+al.add("Name 1");
+al.add("Name 2");
+}
+public static void main(String[] args) throws Exception {
+TestClass tc = new TestClass();
+tc.init();
+System.out.println("Size = " + tc.al.size());
+}
+}`,[2],[`A. import java.lang.*;`,`B. import java.lang.ArrayList;`,`C. import java.util.ArrayList;`,`D. import java.collections.ArrayList;`,`E. No import is necessary`]),
+    new Question(`In which sequence will the characters a, b, and c be printed by the following program ?
+
+import java.util.*;
+public class ListTest {
+public static void main(String[] args) {
+List s1 = new ArrayList();
+s1.add("a");
+s1.add("b");
+s1.add(1, "c");
+List s2 = new ArrayList(s1.subList(1, 1));
+s1.addAll(s2);
+System.out.println(s1);
+}
+}`,[3],[`A. The sequence a, b, c is printed.`,`B. The sequence a, b, c, b is printed.`,`C. The sequence a, c, b, c is printed.`,`D. The sequence a, c, b is printed.`,`E. None of the above`]),
+    new Question(`What will the following code print ?
+
+List s1 = new ArrayList();
+s1.add("a");
+s1.add("b");
+s1.add("c");
+s1.add("a");
+if (s1.remove("a")) {
+if (s1.remove("a")) {
+s1.remove("b");
+} else {
+s1.remove("c");
+}
+}
+System.out.println(s1);`,[1],[`A. [b]`,`B. [c]`,`C. [b, c, a]`,`D. [a, b, c, a]`,`E. Exception at runtime`]),
+    new Question(`Consider the following program and choose the appropriate option:
+import java.util.*;
+class Test {
+public static void main(String []args) {
+Set<Integer> set = new LinkedHashSet<Integer>(); //#1
+LinkedHashSet<Integer> set2 = new HashSet<Integer>(); //#2
+SortedSet<Integer> set3 = new TreeSet<Integer>(); //#3
+SortedSet<Integer> set4 = new NavigableSet<Integer>(); //#4
+}
+}`,[2],[`A. Statements #1, #2, and #3 will compile successfully.`,`B. Statements #1 and #2 will compile successfully.`,`C. Statements #1 and #3 will compile successfully.`,`D. Statements #2 and #4 will compile successfully.`]),
+    new Question(`Consider the following program. What will be the output of this program?
+import java.util.*;
+class Test {
+public static void main(String []args) {
+Set<Integer> set = new TreeSet<Integer>();
+set.add(5);
+set.add(10);
+set.add(3);
+set.add(5);
+System.out.println(set);
+}
+}`,[3],[`A. [5, 10, 3, 5]`,`B. [5, 10, 3]`,`C. [10, 5, 3]`,`D. [3, 5, 10]`]),
+    new Question(`Consider the following program and predict the output:
+import java.util.HashSet;
+class Student {
+public Student(int r) {
+rollNo = r;
+}
+int rollNo;
+}
+class Test {
+public static void main(String[] args){
+HashSet<Student> students = new HashSet<>();
+students.add(new Student(5));
+students.add(new Student(10));
+System.out.println(students.contains(new Student(10)));
+}
+}`,[2],[`A. This program throws NoSuchElementException.`,`B. This program prints the following: true.`,`C. This program prints the following: false.`,`D. This program results in a compiler error.`]),
+    new Question(`Consider the following program and predict the output:
+import java.util.HashSet;
+class Student {
+public Student(int r) {
+rollNo = r;
+}
+int rollNo;
+public int hashCode(){
+return rollNo;
+}
+}
+class Test {
+public static void main(String[] args) {
+HashSet<Student> students = new HashSet<>();
+students.add(new Student(5));
+Student s10 = new Student(10);
+students.add(s10);
+System.out.println(students.contains(new Student(10)));
+System.out.println(students.contains(s10));
+}
+}`,[0],[`A. false
+true`,`B. true
+true`,`C. true
+false`,`D. false
+false`]),
+    new Question(`Which of these method Map interface used to obtain an element in the map having specified key?`,[1],[`A. look()`,`B. get()`,`C. set()`,`D. search()`]),
+    new Question(`Which interface does java.util.Hashtable implement?`,[2],[`A. java.util.Set`,`B. java.util.Collection`,`C. java.util.Map`,`D. java.util.List`]),
+    new Question(`Which interface provides the capability to store objects using a key-value pair?`,[0],[`A. java.util.Map`,`B. java.util.List`,`C. java.util.Set`,`D. java.util.Collection`]),
+    new Question(`What will be the output of the following Java program?
+1. import java.util.*;
+2. class Maps {
+3. public static void main(String args[]) {
+4. HashMap obj = new HashMap();
+5. obj.put("A", new Integer(1));
+6. obj.put("B", new Integer(2));
+7. obj.put("C", new Integer(3));
+8. System.out.println(obj);
+9. }
+10. }`,[3],[`A. {A-1, B-1, C-1}`,`B. {A 1, B 1, C 1}`,`C. {A, B, C}`,`D. {A=1, B=2, C=3}`]),
+    new Question(`To sort an ArrayList<T> by class Array, the class T must be implement the method?`,[1],[`A. Comparable<T>.compare`,`B. Comparable<T>.compareTo`,`C. Comparator<T>.compare`,`D. Sortable<T>.sortOrder`]),
+    new Question(`What will be the output of the following program?
+import java.util.Collections;
+import java.util.LinkedList;
+public class Example {
+public static void main(String args[]) {
+LinkedList<String> list = new LinkedList<String>();
+list.add("BbB1");
+list.add("bBb2");
+list.add("bbB3");
+list.add("BBb4");
+Collections.sort(list);
+for (String str : list) {
+System.out.print(str + " ");
+}
+}
+}`,[1],[`A. BbB1 bBb2 bbB3 BBb4`,`B. BBb4 BbB1 bBb2 bbB3`,`C. BBb4 bbB3 bBb2 BbB1`,`D. bbB3 bBb2 BbB1 BBb4`]),
+    new Question(`Which statements are true?
+public static void before() {
+Set set = new TreeSet();
+set.add("2");
+set.add(3);
+set.add("1");
+Iterator it = set.iterator();
+while (it.hasNext())
+System.out.print(it.next() + " ");
+}`,[3],[`A. The before() method will print 1 2`,`B. The before() method will print 1 2 3`,`C. The before() method will not compile`,`D. The before() method will throw an exception at runtime`]),
+    new Question(`Which class does not override the equals() and hashCode() methods, inheriting them directly from class Object?`,[2],[`A. java.lang.Double`,`B. java.lang.String`,`C. java.lang.StringBuffer`,`D. java.lang.Character`]),
+    new Question(`What will be the output of the following program?
+public class DemoDuplication {
+public static void main(String[] args) {
+Set<Student> students = new HashSet<>();
+students.add(new Student("Ducky", 6));
+students.add(new Student("Clover", 8));
+students.add(new Student("Hugo", 7));
+students.add(new Student("Clover", 8));
+System.out.println(students);
+}
+}
+class Student {
+String name;
+int age;
+Student(String name, int age) {
+this.name = name;
+this.age = age;
+}
+@Override
+public String toString() {
+return "[" + this.name + ", " + this.age + "]";
+}
+}`,[0],[`A. [[Hugo, 7], [Clover, 8], [Ducky, 6], [Clover, 8]]`,`B. [[Hugo, 7], [Clover, 8], [Ducky, 6]`,`C. [[Ducky, 6], [Hugo, 7], [Clover, 8]]`,`D. [[Ducky, 6], [Hugo, 7], [Clover, 8], [Clover, 8]]`]),
+    new Question(`What will be the output of the following program?
+import java.util.*;
+public class CollectionsTest {
+public static void main(String[] args) {
+List<A> l = new ArrayList<A>();
+l.add(new A(5, 4));
+l.add(l.get(0));
+l.add(new A(6, 0));
+l.add(new A(5, 4));
+l.add(new A(6));
+Set<A> s = new HashSet<A>();
+s.addAll(l);
+System.out.print("l = " + l.size() + " s = " + s.size());
+}
+}
+class A {
+int i, j;
+public A(int i, int j) { this.i = i; this.j = j; }
+public A(int i) { this.i = i; }
+}`,[0],[`A. l = 5 s = 4`,`B. l = 5 s = 5`,`C. l = 3 s = 3`,`D. l = 5 s = 3`,`E. Compilation Error or Runtime Error`]),
+    new Question(`What will be the output of the following program?
+import java.util.*;
+public class Person {
+private final String first, last;
+public Person(String first, String last) {
+this.first = first;
+this.last = last;
+}
+public boolean equals(Object o) {
+if (!(o instanceof Person))
+return false;
+Person n = (Person) o;
+return n.first.equals(first) || n.last.equals(last);
+}
+public static void main(String[] args) {
+Set<Person> s = new HashSet<>();
+s.add(new Person("Shahrukh", "Khan"));
+System.out.println(s.contains(new Person("Shahrukh", "Khan")));
+}
+}`,[2],[`A. true true`,`B. true`,`C. false`,`D. Compilation Error or Runtime Error`,`E. false false`]),
+    new Question(`What will be the output of the following program?
+public class GenericsMethodDemo {
+public static <E> void printArray(E[] elements) {
+for (E element : elements){
+System.out.print(element);
+}
+}
+
+public static void main(String args[]) {
+Character[] charArray = { 'F', 'R', 'E', 'S', 'H', 'E', 'R', ' ', 'A', 'C', 'A', 'D', 'E', 'M', 'Y' };
+printArray(charArray);
+}
+}`,[1],[`A. Compilation Error`,`B. FRESHER ACADEMY`,`C. FRESHERACADEMY`]),
+    new Question(`What will be the output of the following program?
+1. public class GenericsMethodDemo {
+2. public static void main(String args[]) {
+3. String str = "Hello";
+4. printString(10);
+5. printString(str);
+6. }
+7. public static <E> void printString(Integer str) {
+8. System.out.println("Integer = " + str);
+9. }
+10. public static <E> void printString(E str) {
+11. System.out.println("String = " + str);
+12. }
+13. }`,[0],[`A. Integer = 10
+String = Hello`,`B. Runtime Error`,`C. String = 10
+String = Hello`,`D. Compilation Error`]),
+    new Question(`What will be the output of the following program?
+1. public class GenericConstructorsDemo {
+2. public static void main(String args[]) {
+3. Gen obj = new Gen(100);
+4. obj.print();
+5. }
+6. }
+7. class Gen {
+8. private double value;
+9. <T extends Number> Gen(T value) {
+10. this.value = value.doubleValue();
+11. }
+12. void print() {
+13. System.out.println(value);
+14. }
+15. }`,[3],[`A. Runtime Error`,`B. Compilation Error`,`C. Some other output`,`D. 100`]),
+    new Question(`What will be the output of the following program?
+1. public class GenericsDemo {
+2. public static void main(String[] args) {
+3. A b = new A(20);
+4. int sum = 10;
+5. sum += b.ob;
+6. System.out.println("Sum = " + sum);
+7. }
+8. }
+9. class A<T> {
+10. T ob;
+11. public A(T ob) {
+12. this.ob = ob;
+13. }
+14. public void print(T ob) {
+15. System.out.println("Obj = " + ob);
+16. }
+17. }`,[0],[`A. Compilation Error`,`B. Obj = 20
+Sum = 30`,`C. Obj = 10
+Sum = 10`,`D. Obj = 10
+Sum = 30`]),
+    new Question(`What type of Exceptions can be ignored at compile time?`,[0],[`A. RuntimeException`,`B. CheckedException`,`C. Both of the above`,`D. None of the above`]),
+    new Question(`Which of these not a Error?`,[3],[`A. OutOfMemoryError`,`B. IOError`,`C. VirtualMachineError`,`D. ClassNotFoundError`]),
+    new Question(`What is the expected output of compiling and running this code?
+class BaseClass {
+public BaseClass() throws RuntimeException {
+System.out.print("BaseClass");
+throw new RuntimeException();
+}
+}
+class DerivedClass extends BaseClass {
+public DerivedClass() throws RuntimeException {
+System.out.print("DerivedClass");
+}
+}
+public class MainClass {
+public static void main(String[] args) {
+new DerivedClass(); // line 17
+}
+}`,[0],[`A. BaseClass will be printed then a RuntimeException would be thrown`,`B. Compile error at line 17, new DerivedClass() should be within a try/catch block`,`C. DerivedClassBaseClass`,`D. BaseClassDerivedClass`]),
+    new Question(`What will be the output of the following program?
+public class MyRadius {
+public static int radius1;
+public static int radius2;
+public final static int sum = 300;
+public static void setRadius(int r) {
+if (r / r + 1250 < 199)
+throw new IllegalArgumentException();
+radius1 = r;
+radius2 = sum - radius1;
+}
+public static void main(String[] args) {
+MyRadius.setRadius(300);
+System.out.println("Radius = " + radius1);
+System.out.println("Radius = " + radius2);
+}
+}`,[0],[`A. Radius = 300
+Radius = 0`,`B. Some other output`,`C. Throws an exception IllegalArgumentException`,`D. Compilation Error or Runtime Error for some other reason`]),
+    new Question(`What will be the output of the following Java program?
+class ExceptionTest {
+public static void main(String args[]) {
+try {
+System.out.print("Hello" + " " + 1 / 0);
+} catch(ArithmeticException e) {
+System.out.print("World");
+}
+}
+}`,[1],[`A. Hello`,`B. World`,`C. HelloWorld`,`D. Hello World`]),
+    new Question(`What will be the output of the program?
+public class X {
+public static void main(String [] args) {
+try {
+badMethod();
+System.out.print("A");
+}
+catch (RuntimeException ex) / Line 10 / {
+System.out.print("B");
+}
+catch (Exception ex1) {
+System.out.print("C");
+}
+finally {
+System.out.print("D");
+}
+System.out.print("E");
+}
+public static void badMethod() {
+throw new RuntimeException();
+}
+}`,[2],[`A. BD`,`B. BCD`,`C. BDE`,`D. BCDE`]),
+    new Question(`Given the following
+1. public class MyProgram {
+2. public static void throwit() {
+3. throw new RuntimeException();
+4. }
+5. public static void main(String args[]){
+6. try {
+7. System.out.println("Hello world ");
+8. throwit();
+9. System.out.println("Done with try block ");
+10. }
+11. finally {
+12. System.out.println("Finally executing ");
+13. }
+14. }
+15. }
+Which answer most closely indicates the behavior of the program?`,[3],[`A. The program will print Hello world, then will print that a RuntimeException has occurred, and then will print Finally executing.`,`B. The program will not compile.`,`C. The program will print Hello world, then will print that a RuntimeException has occurred, then will print Done with try block, and then will print Finally executing.`,`D. The program will print Hello world, then will print Finally executing, then will print that a RuntimeException has occurred.`]),
+    new Question(`Let guess the output of the following code when you try to compile and run it, and there is no file with name "JavaCodingConvention.txt" in the current directory?
+import java.io.*;
+public class Mine {
+public static void main (String args[]) {
+Mine m = new Mine();
+System.out.println(m.amethod());
+}
+public int amethod() {
+try {
+FileInputStream dis = new FileInputStream("JavaCodingConvetion.txt");
+}
+catch (FileNotFoundException fne) {
+System.out.println("No such file found");
+return -1;
+}
+catch (IOException ioe) {
+}
+finally {
+System.out.println("Doing finally");
+}
+return 0;
+}
+}`,[3],[`A. No such file found.`,`B. No such file found, -1`,`C. 0`,`D. No such file found, Doing finally, -1`]),
+    new Question(`What is wrong with the following?
+class Trouble {
+void rightHere() {
+throw new Exception();
+}
+}
+Please select the best answer.`,[1],[`A. You cannot throw an instance of the Exception class.`,`B. The method rightHere() is not defined correctly`,`C. The throw keyword is not used correctly`]),
+    new Question(`What is the result of compiling and running the following code?
+public class Tester {
+static void method() {
+throw new Exception();
+}
+public static void main(String[] args) {
+try {
+method();
+} catch (Throwable e) {
+try {
+throw new Exception() ;
+} catch (Exception ex) {
+System.out.print("exception");
+} finally {
+System.out.print("finally");
+}
+}
+}
+}`,[3],[`A. exception`,`B. finally`,`C. exceptionfinally`,`D. Compilation error`]),
+    new Question(`What is the result of compiling and running the following code?
+public class MainClass {
+public static void main(String[] args) {
+System.out.print("1");
+try {
+return;
+} catch (Exception e) {
+System.out.print("2");
+} finally {
+System.out.print("3");
+}
+System.out.print("4");
+}
+}`,[3],[`A. 1234`,`B. 1`,`C. Compilation error`,`D. 13`]),
+    new Question(`If an exception is generated in try block , then it is caught in ____ block`,[2],[`A. try`,`B. finally`,`C. catch`]),
+    new Question(`Given the following,
+1. public class RTExcept {
+2. public static void throwit () {
+3. System.out.print("throwit ");
+4. throw new RuntimeException();
+5. }
+6. public static void main(String [] args) {
+7. try {
+8. System.out.print("hello ");
+9. throwit();
+10. }
+11. catch (Exception re ) {
+12. System.out.print("caught ");
+13. }
+14. finally {
+15. System.out.print("finally ");
+16. }
+17. System.out.println("after ");
+18. }
+19. }
+What is the result?`,[2],[`A. hello throwit caught`,`B. Compilation fails`,`C. hello throwit caught finally after`,`D. hello throwit caught finally after RuntimeException`]),
+    new Question(`Given the following,
+1. import java.io.*;
+2. public class MyProgram {
+3. public static void main(String args[]){
+4. FileOutputStream out = null;
+5. try {
+6. out = new FileOutputStream("test.txt");
+7. out.write(122);
+8. }
+9. catch(IOException io) {
+10. System.out.println("IO Error.");
+11. }
+12. finally {
+13. out.close();
+14. }
+15. }
+16. }
+and given that all methods of class FileOutputStream, including close(), throw an IOException, which of these is true?`,[3],[`A. This program will compile successfully.`,`B. This program fails to compile due to an error at line 4.`,`C. This program fails to compile due to an error at line 6.`,`D. This program fails to compile due to an error at line 13.`]),
+    new Question(`Given the following,
+1. try {
+2. Float f1 = new Float("3.0");
+3. int x = f1.intValue();
+4. byte b = f1.byteValue();
+5. double d = f1.doubleValue();
+6. System.out.println(x + b + d);
+7. }
+8. catch (NumberFormatException e) {
+9. System.out.println("bad number");
+10. }
+What is the result?`,[0],[`A. 9`,`B. bad number`,`C. Compilation fails on line 3.`,`D. Compilation fails on line 4.`]),
+    new Question(`What will be the output of the program?
+try {
+int x = 0;
+int y = 5 / x;
+}
+catch (ArithmeticException ae) {
+System.out.println(" Arithmetic Exception");
+} catch (Exception e) {
+System.out.println("Exception");
+}
+System.out.println("finished");`,[3],[`A. finished`,`B. Exception`,`C. Compilation fails.`,`D. Arithmetic Exception
+finished`]),
+    new Question(`What will be the output of the program?
+try {
+int x = 0;
+int y = 5 / x;
+}
+catch (Exception e) {
+System.out.println("Exception");
+}
+catch (ArithmeticException ae) {
+System.out.println(" Arithmetic Exception");
+}
+System.out.println("finished");`,[0],[`A. Compilation fails.`,`B. Arithmetic Exception`,`C. finished`,`D. Exception`]),
+    new Question(`Given the following,
+1. System.out.print("Start ");
+2. try {
+3. System.out.print("Hello world");
+4. throw new FileNotFoundException();
+5. }
+6. System.out.print(" Catch Here ");
+7. catch(EOFException e) {
+8. System.out.print("End of file exception");
+9. }
+10. catch(FileNotFoundException e) {
+11. System.out.print("File not found");
+12. }
+and given that EOFException and FileNotFoundException are both subclasses of IOException, and further assuming this block of code is placed into a class, which statement is most true concerning this code?`,[2],[`A. Code output: Start Hello world End of file exception`,`B. Code output: Start Hello world Catch Here File not found.`,`C. The code will not compile.`,`D. Code output: Start Hello world File Not Found.`]),
+    new Question(`What package holds the File class ?`,[0],[`A. java.io`,`B. java.file`,`C. java.util`,`D. java.lang`]),
+    new Question(`What FIle method creates a new disk directory ?`,[0],[`A. mkdir();`,`B. makeDirectory();`,`C. dir()`,`D. list()`]),
+    new Question(`Given the following code,
+1. import java.io.*;
+2. public class ReadingFor {
+3. public static void main(String[] args) {
+4. String s;
+5. try {
+6. FileReader fr = new FileReader("myfile.txt");
+7. BufferedReader br = new BufferedReader(fr);
+8. while((s = br.readLine()) != null)
+9. System.out.println(s);
+10. br.flush();
+11. } catch (IOException e) { System.out.println("io error"); }
+12. }
+13. }
+And given that myfile.txt contains the following two lines of data:
+ab
+cd
+What is the result?`,[2],[`A. ab`,`B. abcd`,`C. Compilation fails`,`D. a
+b
+c
+d`]),
+    new Question(`What method of File is used to test if a file or directory exists ?`,[3],[`A. isFile()`,`B. isDirectory()`,`C. list()`,`D. exists()`]),
+    new Question(`Which of these class is used to read charecters in a file ?`,[0],[`A. FIleReader`,`B. FileWriter`,`C. FileInputStream`,`D. InputStreamReader`]),
+    new Question(`Which of these is used to read a string from the input stream ?`,[2],[`A. get()`,`B. getLine()`,`C. read()`,`D. readLine()`]),
+    new Question(`Given:
+import java.io.*;
+class Keyboard {
+}
+public class Computer implements Serializable {
+private Keyboard k = new Keyboard();
+public static void main(String[] args) {
+Computer c = new Computer();
+c.storeIt(c);
+}
+void storeIt(Computer c) {
+try {
+ObjectOutputStream os = new ObjectOutputStream(
+new FileOutputStream("myFile"));
+os.writeObject(c);
+os.close();
+System.out.println("done");
+} catch (Exception x) {
+System.out.println("exc");
+}
+}
+}
+What is the result?`,[0],[`A. exc`,`B. done`,`C. Compilation fails`,`D. An exception is thrown at runtime`]),
+    new Question(`Which of these exception is thrown in cases when the file specified for writing it not found?`,[2],[`A. IOException`,`B. FileException`,`C. FileNotFoundException`,`D. FileInputException`]),
+    new Question(`Which of these class is used to read characters and strings in Java from console?`,[0],[`A. BufferedReader`,`B. StringReader`,`C. BufferedStreamReader`,`D. InputStreamReader`]),
+    new Question(`Which if the following is correct about PreparedStatement?`,[0],[`A. Both of the above.`,`B. The PrepareStatement interface accepts input parameters at runtime.`,`C. Used when you plan to use the SQL statements many times.`,`D. None of the above.`]),
+    new Question(`Which method is used to perform DML statements (insert, update, delete) in JDBC?`,[2],[`A. execute()`,`B. executeQuery()`,`C. executeUpdate()`,`D. executeResult()`]),
+    new Question(`The method executes a simple query and returns a single ResultSet?`,[1],[`A. execute()`,`B. executeQuery()`,`C. executeUpdate()`,`D. noexecute()`]),
+    new Question(`Which of the following is correct about Statement?`,[3],[`A. Useful when you are using static SQL statements at runtime.`,`B. The Statement interface can not accept parameters.`,`C. Used for general-purpose access to your database.`,`D. All of the above`]),
+    new Question(`PreparedStatement is more secure because they use to bind variables, which can prevent SQL injection attack?`,[0],[`A. TRUE`,`B. FALSE`]),
+    new Question(`Which of the following declaration is valid in Example.java file?`,[3],[`A. class Example {}
+class Example1 {}
+public class Example2 {}`,`B. public class Example {}
+public class Example1 {}
+public class Example 2{}`,`C. public class example {}
+class Example1 {}
+class Example2 {}`,`D. public class Example {}
+class Example1 {}
+class Example2 {}`,`E. None of the above`]),
+    new Question(`Which of the following annotation tells JUnit that the public void method to which it is attached can be run as a test case?`,[2],[`A. @After`,`B. @Before`,`C. @Test`,`D. BeforeClass`]),
+    new Question(`Which of the following annotation causes that method run once before any of the test methods in the class?`,[0],[`A. @BeforeClass`,`B. @AfterClass`,`C. @Test`,`D. @Before`]),
+    new Question(`Which of the following annotation causes that method to be run before each Test method?`,[0],[`A. @Before`,`B. @BeforeClass`,`C. @After`,`D. @Test`]),
+    new Question(`Which of the following method of Assert class checks that two primitives/Objects are equal?`,[0],[`A. void assertEquals(boolean expected, boolean actual)`,`B. void assert(boolean expected, boolean actual)`,`C. void assertChecks(boolean expected, boolean actual)`,`D. void assertCheck(boolean expected, boolean actual)`]),
+    new Question(`Which of the following method of Assert class fails a test with no message?`,[2],[`A. void assert(boolean pass)`,`B. void assertChecks(boolean pass)`,`C. void fail()`,`D. void assertCheck(boolean pass)`]),
+    new Question(`Which of the following method of Assert class checks whether two arrays are equal to each other?`,[2],[`A. void assert(Object[] expectedArray, Object[] resultArray,boolean isSame)`,`B. void assertCheck(Object[] expectedArray, Object[] resultArray,boolean isSame)`,`C. void assertArrayEquals(Object[] expectedArray, Object[] resultArray)`,`D. void assertChecks(Object[] expectedArray, Object[] resultArray,boolean isSame)`]),
+    new Question(`Which of the following method of Assert class checks if two object references point to the same object?`,[1],[`A. void assert(Object expected, Object actual)`,`B. void assertSame(Object expected, Object actual)`,`C. void assertChecks(Object expected, Object actual)`,`D. void assertCheck(Object expected, Object actual)`]),
+    new Question(`Which of the following method of Assert class checks that an object isn't null?`,[2],[`A. void assert(Object object, boolean toCheckAsNull)`,`B. void assertCheck(Object object, boolean toCheckAsNull)`,`C. assertNotNull(Object object)`,`D. void assertChecks(Object object, boolean toCheckAsNull)`]),
+    new Question(`Which of the following method of Assert class checks that a condition is true?`,[0],[`A. void assertTrue(boolean condition)`,`B. void assertCheck(boolean condition)`,`C. void assert(boolean condition)`,`D. void assertChecks(boolean condition)`]),
+    new Question(`Which of the following class is a Composite of Tests?`,[3],[`A. Assert`,`B. TestCase`,`C. TestResult`,`D. TestSuite`]),
+    new Question(`@RunWith and @Suite annotation are used to run the suite test?`,[1],[`A. true`,`B. false`]),
+    new Question(`JSON stands for`,[1],[`A. Java Standard Output Network`,`B. JavaScript Object Notation`,`C. JavaScript Output Name`,`D. Java Source Open Network`]),
+    new Question(`Which is correct format of writing JSON name/value pair ?`,[3],[`A. 'name=value'`,`B. name: 'value'`,`C. name = "value"`,`D. "name":"value"`]),
+    new Question(`What of the following is not a type in JSON ?`,[0],[`A. date`,`B. Object`,`C. Array`,`D. string`]),
+    new Question(`Can you use a double quote inside a JSON string ?`,[2],[`A. No, you should use single quotes`,`B. Yes, if you use the ascii code`,`C. Yes, if it is escaped like (\\")`,`D. Yes, you can use it without any special treatment`]),
+    new Question(`JSON elements are separated by the ____ ?`,[2],[`A. line break`,`B. semi-colon`,`C. comma`,`D. white space`]),
 ]
 let checkContainIndex = (array, element) => {
     for (let checkElelement of array) {
@@ -1239,7 +1877,6 @@ let checkContainQuestion = () => {
         }
     }
 }
-
 let selectFunction = () => {
     inputData = window.getSelection().toString();
 }
