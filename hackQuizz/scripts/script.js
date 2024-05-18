@@ -1098,12 +1098,40 @@ System.out.println("hello");
 }
 
 Which of the following corrections can be applied to the above code (independently) so that it compiles without any error ? (You had to select 2 options)`,[0,2],[`A. Replace the method body of m2() with a : (semi-colon)`,`B. Replace the : at the end of m1() with a method body`,`C. Remove abstract from m2()`,`D. Remove abstract from the class declaration`]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
-    new Question(``,[],[``,``,``,``]),
+    new Question(`Which of the following statements can be inserted at //1 to make the code compile without errors ?
+
+public class InitTest {
+static int s1 = 10;
+int i;
+final boolean bool;
+// 1
+}`,[4],[`A. instance {bool = true; }`,`B. initTest() {si += 10; }`,`C. {si = 5; i = bool ? 1000 : 2000; }`,`D. {i = 1000; }`,`E. {bool = (si > 5); i = 1000; }`]),
+    new Question(`Given the following code,
+class Triangle {
+public int base;
+public int height;
+private final double ANGLE;
+public void setAngle(double a) { ANGLE = a; }
+public static void main(String[] args) {
+Triangle t = new Triangle();
+t.setAngle(90);
+}
+}
+Identify the correct statement(s).`,[3],[`A. An exception will be thrown at run time.`,`B. the value of ANGLE will not be set to 90 by the setAngle method.`,`C. The code will work as expected setting the value of ANGLE to 90.`,`D. The code will not compile.`]),
+    new Question(`What should be the return type of the following method?
+public RETURNTYPE methodX(byte by) {
+double d = 10.0;
+return (long) by / d*3;
+}`,[0],[`A. double`,`B. int`,`C. long`,`D. float`,`E. byte`]),
+    new Question(`Final variables should be declared in the beginning ?`,[0],[`A. true`,`B. false`]),
+    new Question(`Which of the following way is a valid annotation definition?`,[0],[`A. public @interface MyAnnotation{}`,`B. public @annotation MyAnnotation{}`,`C. private @interface MyAnnotation{}`,`D. public @MyAnnotation{}`]),
+    new Question(`Which one statement is true about the code below?
+1. String s1 = "abc" + "def";
+2. String s2 = new String(s1);
+3. if (s1 == s2)
+4. System.out.println("== succeeded");
+5. if (s1.equals(s2))
+6. System.out.println(".equals() succeeded");`,[3],[`A. Line 4 executes, and line 6 does not.`,`B. Lines 4 and 6 both execute.`,`C. Neither line 4 nor line 6 executes.`,`D. Line 6 executes, and line 4 does not.`]),
     new Question(``,[],[``,``,``,``]),
     new Question(``,[],[``,``,``,``]),
     new Question(``,[],[``,``,``,``]),
