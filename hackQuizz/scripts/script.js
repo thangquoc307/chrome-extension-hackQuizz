@@ -1881,7 +1881,18 @@ let selectFunction = () => {
     inputData = window.getSelection().toString();
 }
 let keydown = (event) => {
-    let checkKey = event.key == "a";
+    let checkKey = false;
+    switch (event.key) {
+        case "a":
+        case "s":
+        case "d":
+        case "f":
+        case "g":
+        case "h":
+            checkKey = true;
+            break;
+    }
+
     if (checkKey && inputData.length > 10 && !show) {
         show = true;
         showTable();
