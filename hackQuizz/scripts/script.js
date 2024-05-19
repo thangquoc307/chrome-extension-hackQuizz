@@ -14,7 +14,7 @@ class Question {
         for (let i = 0; i < this.answer.length; i++) {
             let data = this.answer[i];
             let isTrue = checkContainIndex(this.trueIndex, i);
-            result += `<div style='color: ${isTrue ? "red" : "white"}' >${data}</div>`;
+            result += `<div style='color: ${isTrue ? "red" : "black"}; font-weight: bolder' >${data}</div>`;
         }
         return result;
     }
@@ -1899,7 +1899,7 @@ let setupEvent = () => {
     if (!table) {
         body.innerHTML += `<div id='lqt-show' style='
             width: 500px; padding: 20px 10px; position: fixed; top: 30px; right: 30px;
-            background-color: rgba(0,0,0,0.9); border-radius: 20px; z-index: 9000;
+            background-color: rgba(255,255,255,0.9); border-radius: 20px; z-index: 9000;
             display: none;
         '></div>`
     }
@@ -1915,14 +1915,14 @@ let showTable = () => {
     if (element) {
         element.style.display = "block";
         let dataQuestion = checkContainQuestion();
-        console.log(dataQuestion)
+        // console.log(dataQuestion)
         if (dataQuestion){
             element.innerHTML = dataQuestion.getData();
         } else {
             element.innerHTML = `not matching any question on database`
         }
     } else {
-        console.log("Element with id 'lqt-show' not found");
+        // console.log("Element with id 'lqt-show' not found");
     }
 }
 let hiddenTable = () => {
@@ -1930,7 +1930,7 @@ let hiddenTable = () => {
     if (element) {
         element.style.display = "none";
     } else {
-        console.log("Element with id 'lqt-show' not found");
+        // console.log("Element with id 'lqt-show' not found");
     }
 }
 
